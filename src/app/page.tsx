@@ -1,8 +1,18 @@
 import Image from "next/image";
+import figsData from "@/data/figs.json";
 
 export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+      <h1>Welcome to 'Name?'</h1>
+
+      {figsData.products.map((product: any) => (
+        <div key={product.name}>
+          <h2>{product.name}</h2>
+          <p>${product.price}</p>
+        </div>
+      ))}
+
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
