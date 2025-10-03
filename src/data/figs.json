@@ -1,0 +1,14 @@
+{
+  "products": [
+    {
+      "name": "Brown Turkey",
+      "price": 4.99,
+      "images": ["bt/breba"]
+    },
+    {
+      "name": "Cigar",
+      "price": 3.99,
+      "images": ["rt/main"]
+    }
+  ]
+}
